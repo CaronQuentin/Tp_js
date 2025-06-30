@@ -1,0 +1,11 @@
+<select id="category" [value]="selectedCategory()" (change)="onCategoryChange($event)">
+  @if (categories(); as list) {
+    @for (category of list; track category) {
+      <option [value]="category" [selected]="category === selectedCategory()">
+        {{ category }}
+      </option>
+    }
+  } @else {
+    <option disabled>Chargement des catégories...</option>
+  }
+</select>

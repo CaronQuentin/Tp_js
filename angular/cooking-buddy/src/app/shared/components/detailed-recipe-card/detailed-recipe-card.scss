@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column; /* pour empiler verticalement les items */
+  gap: 15px;
+  padding: 20px;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  align-items: center; /* aligne verticalement au centre */
+  gap: 15px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #e0f0ff;
+}
+
+.img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}

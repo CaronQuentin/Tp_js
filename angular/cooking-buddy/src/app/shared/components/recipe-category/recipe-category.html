@@ -1,0 +1,10 @@
+@if (recipes(); as recipes) {
+
+@for (recipe of recipes.meals ; track recipe.idMeal) {
+
+    <app-recipe-card [img]="recipe.strMealThumb" [name]="recipe.strMeal" [id]="recipe.idMeal" />
+
+    } @empty {
+  <p>No recipes found for this category.</p>
+    }
+}

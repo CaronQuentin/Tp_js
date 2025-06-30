@@ -1,0 +1,12 @@
+.recipes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+  margin: 20px 0;
+  text-align: center;
+}
